@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Семантичні елементи</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Головна</li>
+            <li><a href="Resume.html">Моє резюме</a></li>
+            <li>Блог
+                <ol>
+                    <li><a href="#semantics">Семантика</a></li>
+                    <li><a href="#frontend">Фронтенд</a></li>
+                </ol>
+            </li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="Visitor.html">Анкета відвідувача ресторана</a></li>
+        </ul>
+    </nav>
+    <!--section потрібно поміняти місцями з артіклами-->
+    <section id="semantics">
+        <h1>HTML5 Семантичні елементи</h1>
+        <p>"Семантичний елемент чітко описує його значення як для браузера, так і для розробника."</p>
+        <p>"Приклади не семантичних елементів: &lt;div&gt; і &lt;span&gt;- нічого не говорить про його вміст."</p>
+        <p>"Приклади семантичних елементів: &lt;form&gt;, &lt;table&gt;і &lt;article&gt;- чітко визначає його зміст."
+        </p>
+        <h2>Підтримка браузерів</h2>
+        <img src="images/compatible_chrome.gif" alt="Chrome">
+        <img src="images/compatible_edge.gif" alt="Edge">
+        <img src="images/compatible_firefox.gif" alt="Firefox">
+        <img src="images/compatible_opera.gif" alt="Opera">
+        <img src="images/compatible_safari.gif" alt="Safari">
+        <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+        <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".</p>
+        <p> Прочитайте про це в
+            <a href="https://html5css.ru/html/html5_browsers.php">https://html5css.ru/html/html5_browsers.php</a>
+        </p>
+        <h2>Нові семантичні елементи в HTML5</h2>
+        <p>Багато веб-вузли містять HTML-код, наприклад: &lt;div ID = &quot;NAV&quot;&gt; &lt;div class =
+            &quot;заголовок&quot;&gt; &lt;div ID = &quot;нижній колонтитул&quot;&gt;&lt;/div&gt; <br>для позначення
+            навігації, верхнього і нижнього колонтитулів.</p>
+        <p>HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки:</p>
+        <ul>
+            <li>&lt;article&gt;</li>
+            <li>&lt;aside&gt;</li>
+            <li>&lt;details&gt;</li>
+            <li>&lt;figcaption&gt;</li>
+            <li>&lt;figure&gt;</li>
+            <li>&lt;footer&gt;</li>
+            <li>&lt;header&gt;</li>
+            <li>&lt;main&gt;</li>
+            <li>&lt;mark&gt;</li>
+            <li>&lt;nav&gt;</li>
+            <li>&lt;section&gt;</li>
+            <li>&lt;summary&gt;</li>
+            <li>&lt;time&gt;</li>
+        </ul>
+    </section>
+    <section id="frontend">
+        <article id="section">
+            <h2>HTML5 &lt;section&gt; елемент</h2>
+            <p>Елемент &lt;section&gt;визначає розділ в документі.</p>
+            <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою тематичну угруповання контенту, зазвичай з
+                заголовком".</p>
+            <p>Домашня сторінка зазвичай може бути розділена на розділи для ознайомлення, змісту і контактної
+                інформації.
+            </p>
+            <img src="images/Screenshot_7.jpg" alt="section">
+        </article>
+        <article id="article">
+            <h2>HTML5 &lt;article&gt; елемент</h2>
+            <p>Елемент &lt;article&gt;визначає незалежний, автономний вміст.</p>
+            <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої
+                частини
+                веб-сайту.</p>
+            <p>Приклади того, де можна використовувати елемент
+                &lt;article&gt;:</p>
+            <ul>
+                <li>Повідомлення на форумі</li>
+                <li>блозі</li>
+                <li>Газетна стаття</li>
+            </ul>
+            <img src="images/Screenshot_6.jpg" alt="article">
+        </article>
+        <article id="article+section">
+            <h2>Вкладення &lt;article&gt; в &lt;section&gt; або навпаки?</h2>
+            <p>Елемент &lt;article&gt;визначає незалежне, автономне вміст.</p>
+            <p>Елемент &lt;section&gt;визначає розділ в документі.</p>
+            <p>Чи можемо ми використовувати визначення, щоб вирішити, як вкладати ці елементи? Ні, ми не можемо!</p>
+            <p>Таким чином, в Інтернеті ви знайдете HTML-сторінки з &lt;section&gt;елементами, що містять елементи
+                &lt;article&gt;, і &lt;article&gt;елементи, що містять &lt;section&gt;елементи.</p>
+            <p>Ви також знайдете сторінки з елементами &lt;section&gt;, що містять елементи &lt;section&gt;, і
+                &lt;article&gt;елементи, що містять &lt;article&gt;елементи.</p>
+        </article>
+        <article id="header">
+            <h2>HTML5 &lt;header&gt; елемент</h2>
+            <p>Елемент &lt;header&gt;задає заголовок для документа або розділу.</p>
+            <p>Елемент &lt;header&gt;повинен використовуватися в якості контейнера для вступного змісту.</p>
+            <p>В одному документі може бути кілька елементів &lt;header&gt;.</p>
+            <p>У наступному прикладі визначається заголовок для статті:</p>
+            <img src="images/Screenshot_5.jpg" alt="header">
+        </article>
+        <article id="footer">
+            <h2>HTML5 &lt;footer&gt; елемент</h2>
+            <p>Елемент &lt;footer&gt;вказує нижній колонтитул для документа або розділу.</p>
+            <p>Нижній колонтитул зазвичай містить автора документа, інформацію про авторське право, посилання на умови
+                використання, контактні дані і т.д.</p>
+            <p>В одному документі може бути кілька елементів &lt;footer&gt;.</p>
+            <img src="images/Screenshot_4.jpg" alt="footer">
+        </article>
+        <article id="nav">
+            <h2>HTML5 &lt;Nav&gt; елемент</h2>
+            <p>Елемент &lt;nav&gt;визначає набір навігаційних посилань.</p>
+            <p>Зверніть увагу, що не всі посилання документа повинні знаходитися всередині елемента &lt;nav&gt;. Елемент
+                &lt;nav&gt;призначений тільки для основного блоку навігаційних посилань.</p>
+            <img src="images/Screenshot_3.jpg" alt="nav">
+        </article>
+        <article id="aside">
+            <h2>HTML5 &lt;aside&gt; елемент</h2>
+            <p>Зміст &lt;aside&gt;має бути пов&#039;язане з навколишнім вмістом.</p>
+            <img src="images/Screenshot_2.jpg" alt="aside">
+        </article>
+        <article id="figure+figcaption">
+            <h2>HTML5 &amp; &lt;figure&gt; і &lt;figcaption&gt; елементи</h2>
+            <p>Метою малюнка є додавання візуального пояснення до зображення.</p>
+            <p>У HTML5 зображення і заголовок можуть бути згруповані разом в елементі &lt;figure&gt;:</p>
+            <img src="images/Screenshot_1.jpg" alt="figure&figcaption">
+            <p>Елемент &lt;img&gt;визначає зображення, елемент &lt;figcaption&gt;визначає заголовок.</p>
+        </article>
+    </section>
+</body>
+
+</html>
