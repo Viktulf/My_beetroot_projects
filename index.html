@@ -16,16 +16,18 @@
             <li>Блог
                 <ol>
                     <li><a href="#semantics">Семантика</a></li>
-                    <li><a href="#frontend">Фронтенд</a></li>
+                    <li><a href="#section">Фронтенд</a></li>
                 </ol>
             </li>
             <li><a href="contacts.html">Контакти</a></li>
             <li><a href="Visitor.html">Анкета відвідувача ресторана</a></li>
+            <li><a href="Lesson_4/index.html">Знайомство з CSS</a></li>
+            <li><a href="Lesson_5/index.html">Портфоліо</a></li>
         </ul>
     </nav>
-    <!--section потрібно поміняти місцями з артіклами-->
-    <section id="semantics">
-        <h1>HTML5 Семантичні елементи</h1>
+
+    <article>
+        <h1 id="semantics">HTML5 Семантичні елементи</h1>
         <p>"Семантичний елемент чітко описує його значення як для браузера, так і для розробника."</p>
         <p>"Приклади не семантичних елементів: &lt;div&gt; і &lt;span&gt;- нічого не говорить про його вміст."</p>
         <p>"Приклади семантичних елементів: &lt;form&gt;, &lt;table&gt;і &lt;article&gt;- чітко визначає його зміст."
@@ -61,9 +63,8 @@
             <li>&lt;summary&gt;</li>
             <li>&lt;time&gt;</li>
         </ul>
-    </section>
-    <section id="frontend">
-        <article id="section">
+
+        <section id="section">
             <h2>HTML5 &lt;section&gt; елемент</h2>
             <p>Елемент &lt;section&gt;визначає розділ в документі.</p>
             <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою тематичну угруповання контенту, зазвичай з
@@ -72,8 +73,8 @@
                 інформації.
             </p>
             <img src="images/Screenshot_7.jpg" alt="section">
-        </article>
-        <article id="article">
+        </section>
+        <section id="article">
             <h2>HTML5 &lt;article&gt; елемент</h2>
             <p>Елемент &lt;article&gt;визначає незалежний, автономний вміст.</p>
             <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої
@@ -87,8 +88,8 @@
                 <li>Газетна стаття</li>
             </ul>
             <img src="images/Screenshot_6.jpg" alt="article">
-        </article>
-        <article id="article+section">
+        </section>
+        <section id="article+section">
             <h2>Вкладення &lt;article&gt; в &lt;section&gt; або навпаки?</h2>
             <p>Елемент &lt;article&gt;визначає незалежне, автономне вміст.</p>
             <p>Елемент &lt;section&gt;визначає розділ в документі.</p>
@@ -97,43 +98,43 @@
                 &lt;article&gt;, і &lt;article&gt;елементи, що містять &lt;section&gt;елементи.</p>
             <p>Ви також знайдете сторінки з елементами &lt;section&gt;, що містять елементи &lt;section&gt;, і
                 &lt;article&gt;елементи, що містять &lt;article&gt;елементи.</p>
-        </article>
-        <article id="header">
+        </section>
+        <section id="header">
             <h2>HTML5 &lt;header&gt; елемент</h2>
             <p>Елемент &lt;header&gt;задає заголовок для документа або розділу.</p>
             <p>Елемент &lt;header&gt;повинен використовуватися в якості контейнера для вступного змісту.</p>
             <p>В одному документі може бути кілька елементів &lt;header&gt;.</p>
             <p>У наступному прикладі визначається заголовок для статті:</p>
             <img src="images/Screenshot_5.jpg" alt="header">
-        </article>
-        <article id="footer">
+        </section>
+        <section id="footer">
             <h2>HTML5 &lt;footer&gt; елемент</h2>
             <p>Елемент &lt;footer&gt;вказує нижній колонтитул для документа або розділу.</p>
             <p>Нижній колонтитул зазвичай містить автора документа, інформацію про авторське право, посилання на умови
                 використання, контактні дані і т.д.</p>
             <p>В одному документі може бути кілька елементів &lt;footer&gt;.</p>
             <img src="images/Screenshot_4.jpg" alt="footer">
-        </article>
-        <article id="nav">
+        </section>
+        <section id="nav">
             <h2>HTML5 &lt;Nav&gt; елемент</h2>
             <p>Елемент &lt;nav&gt;визначає набір навігаційних посилань.</p>
             <p>Зверніть увагу, що не всі посилання документа повинні знаходитися всередині елемента &lt;nav&gt;. Елемент
                 &lt;nav&gt;призначений тільки для основного блоку навігаційних посилань.</p>
             <img src="images/Screenshot_3.jpg" alt="nav">
-        </article>
-        <article id="aside">
+        </section>
+        <section id="aside">
             <h2>HTML5 &lt;aside&gt; елемент</h2>
             <p>Зміст &lt;aside&gt;має бути пов&#039;язане з навколишнім вмістом.</p>
             <img src="images/Screenshot_2.jpg" alt="aside">
-        </article>
-        <article id="figure+figcaption">
+        </section>
+        <section id="figure+figcaption">
             <h2>HTML5 &amp; &lt;figure&gt; і &lt;figcaption&gt; елементи</h2>
             <p>Метою малюнка є додавання візуального пояснення до зображення.</p>
             <p>У HTML5 зображення і заголовок можуть бути згруповані разом в елементі &lt;figure&gt;:</p>
             <img src="images/Screenshot_1.jpg" alt="figure&figcaption">
             <p>Елемент &lt;img&gt;визначає зображення, елемент &lt;figcaption&gt;визначає заголовок.</p>
-        </article>
-    </section>
+        </section>
+    </article>
 </body>
 
 </html>
