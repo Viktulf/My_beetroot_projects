@@ -1,0 +1,8 @@
+body {
+    
+    @font-face {
+        font-family: Proxima Nova Regular;
+        src: url(fonts/12093.ttf);
+    }
+    
+}

@@ -1,0 +1,185 @@
+    /* Proxima Nova */
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximaNovaRegular/ProximaNova-Regular.eot');
+    src: url('../fonts/proximaNovaRegular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/proximaNovaRegular/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/proximaNovaRegular/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+    /* PlayFair Display */
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/PlayFairDisplay/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayFairDisplay/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayFairDisplay/PlayfairDisplay-Regular.woff') format('woff'),
+    url('../fonts/PlayFairDisplay/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+    /* Futura */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaPT/FuturaPT-Heavy.eot');
+    src: url('../fonts/FuturaPT/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaPT/FuturaPT-Heavy.woff') format('woff'),
+    url('../fonts/FuturaPT/FuturaPT-Heavy.ttf') format('truetype');
+    font-weight: 'Heavy';
+    font-style: normal;
+}
+    /* Georgia */
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/Georgia/Georgia.eot');
+    src: url('../fonts/Georgia/Georgia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Georgia/Georgia.woff') format('woff'),
+    url('../fonts/Georgia/Georgia.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+    /* Georgia italic */
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/GeorgiaItalic/Georgia-Italic.eot');
+    src: url('../fonts/GeorgiaItalic/Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GeorgiaItalic/Georgia-Italic.woff') format('woff'),
+    url('../fonts/GeorgiaItalic/Georgia-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: Italic;
+}
+
+body {
+    margin: 0;
+    background: #464f54;
+}
+
+*,*::after,::before {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 20px);
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.big {
+    max-width: 1200px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.sheet_inner {
+    background: #ffff;
+    box-shadow: 0px 0px 30px #000;    
+}
+
+.sheet_content {
+    margin-left: 25px;
+    padding: 200px 55px 10px 55px;
+    border-left: 1px solid #e8eced;
+}
+
+.author {
+    font-size: 19px;
+    font-family: "Proxima Nova";
+    color: rgb(180, 180, 180);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.title {
+    font-family: 'Futura';
+    font-weight: 'Heavy';
+    font-size: 40px;
+    color: #2a2a2a;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: 'Georgia';
+    font-style: italic;
+    font-size: 20px;
+    color: #8f8f8f;
+}
+
+.italic {
+    font-family: 'Georgia';
+    font-style: italic;
+}
+
+.p {
+    font-family: 'Georgia';
+    font-size: 30px;
+}
+
+.input_body {
+    width: 50%;
+    position: absolute;
+    bottom: 77%;
+    right: 0;
+}
+
+.input_inner {
+    width: 100%;
+    background: #000;
+    padding: 60px 0 40px 60px;
+}
+
+.title_input {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-size: 15px;
+    color: #767676;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #303030;
+    outline: none;
+    background: #000;
+    font-family: 'Playfair';
+    font-weight: 400px;
+    font-size: 20px;
+    color: #ffff;   
+}
+
+
+.input_btn_inner {
+    width: 90%;
+    margin-left: 10%;
+    background: #f0b72b;
+}
+
+.btn_input {
+    border: 0;
+    background: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn_input span {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fccb53;
+    transition: all .1s ease;
+}
+
+.btn_input:hover span {
+    color: #ffff;
+}
+
+.btn_input:focus {
+    outline: none;
+}
