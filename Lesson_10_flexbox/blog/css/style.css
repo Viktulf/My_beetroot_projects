@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background: #b07cf7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+}
+
+
+.container {
+    width: calc(100% - 30px);
+    max-width: 1170px;
+
+    margin: 0 auto;
+}
+
+.h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+    font-size: 5.625rem;
+    text-align: center;
+}
+
+.h1:first-letter {
+    text-transform: uppercase;
+}
+
+.text {
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.0625rem;
+}
+
+.item__wrapper {
+    margin-top: 50px;
+}
+
+.item {
+    display: inline-block;
+    width: 32%;
+
+    vertical-align: top;
+    
+    position: relative;    
+    box-shadow: 0px 0px 7px 1px #000;
+}
+
+.item--center {
+    margin: 0 18px;
+}
+
+.item__img {
+    position: relative;
+    min-height: 310px;
+    overflow: hidden;
+}
+
+.item__img-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item__num {
+    font-size: 1.2rem;
+    line-height: .9;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .4);
+
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    z-index: 1;
+
+
+    transform: translate(-200%, -200%) scale(0);
+
+    transition: all .2s linear;
+}
+
+
+.item:hover .item__num {
+    transform: translate(0, 0) scale(1);
+}
+
+.item__text {
+    width: 100%;
+    padding: 2% 2% 5% 5%;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,.9) 10%, rgba(0,0,0,0) 100%);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translate(0, 100%);
+    transition: all .3s ease;
+}
+
+.item:hover .item__text {
+    transform: translate(0, 0);
+}
+
+.item__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.item__author {
+    font-size: .812rem;
+    font-weight: 300;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+.footer__link__box {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer__link {
+    padding: 20px 40px;
+    background: #f72b3b;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #000;
+    margin: 0 auto;
+    text-transform: uppercase;    
+    text-decoration: none;
+    color: #fff;
+    transition: background .1s ease;
+}
+
+.footer__link:hover {
+    background: #923038;
+}
+
+
+
+

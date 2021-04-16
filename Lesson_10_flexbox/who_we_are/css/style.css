@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #3c3c3c;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    margin-top: 100px;
+}
+
+.container {
+    width: calc(100% - 30px);
+    max-width: 1170px;
+
+    margin: 0 auto;
+}
+
+
+.h1 {
+    display: block;
+    font-size: 2.125rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.h1::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+
+    background: #dddbdb;
+
+    position: absolute;
+    bottom: -20px;
+    left: 48.6%;
+    z-index: 1;
+}
+
+.text {
+    display: block;
+
+    
+    width: 100%;
+    max-width: 567px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+
+.item__wrapper {
+    display: block;
+    margin: 0 auto;
+}
+
+.item {
+    width: 23.8%;
+
+    display: inline-block;
+
+    margin: 0 .5%;
+
+    overflow: hidden;
+
+}
+
+.item__photo {
+    position: relative;
+
+}
+
+.item__photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+
+
+}
+
+.item__name {
+    margin-top: 19px;
+
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.item__rang {
+    margin-top: 5px;
+
+    font-size: .875rem;
+    font-weight: 300;
+    color: #646464;
+}
+    
+.item__social {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #18b5dc;
+    text-align: center;
+    transform: scale(0) rotate(0);
+    transition: all .2s ease;
+}
+
+.item__social__wrapper {
+    margin-top: 35%;
+}
+
+.item__social__link {
+    display: inline-block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgba(255,255,255, .5);
+    padding: 10px;
+    margin: 0 2px;
+    background: #5ecbe7;
+    transition: all .1s ease;
+}
+
+.item__social__link:hover {
+    color: rgba(255,255,255, 1);
+}
+
+.item:hover .item__social {
+    transform: scale(1) rotate(360deg);
+}
+

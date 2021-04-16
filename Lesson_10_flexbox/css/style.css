@@ -1,0 +1,15 @@
+.img {
+    width: 40%;
+
+    border: 1px dotted #000;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
