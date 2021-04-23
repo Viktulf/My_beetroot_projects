@@ -1,0 +1,445 @@
+body {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  color: #252a34;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: calc(100% - 30px);
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 30px 0 45px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0 -15px;
+}
+
+.nav__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.nav__link {
+  margin: 0 10px;
+}
+.nav__link:first-letter {
+  text-transform: uppercase;
+}
+
+.link_active {
+  font-weight: 800;
+}
+
+.nav__link--link {
+  font-size: 0.875rem;
+  line-height: 1.357;
+  text-decoration: none;
+  color: #252a34;
+  position: relative;
+  padding: 0 5px;
+}
+
+.ubderline::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #252525;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transform: scale(0);
+  transition: transform 0.1s linear;
+}
+.ubderline:hover::after {
+  transform: scale(1);
+}
+
+.ubderline--red::after {
+  background: #ff2e63;
+}
+
+.ubderline_white::after {
+  background: #ffffff;
+}
+
+.nav__btn {
+  margin: 0 15px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  line-height: 1.361;
+  color: #ff2e63;
+  position: relative;
+}
+
+.nav__btn--reg {
+  padding: 8px 23px;
+  background: #ff2e63;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.nav__btn--reg:hover {
+  background: #ff2000;
+}
+
+.home__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55vh;
+}
+
+.home__title {
+  width: 100%;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 3.125rem;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 43px;
+}
+
+.home__title_span {
+  color: #ff2e63;
+}
+
+.home__link {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #346cd9;
+  border-radius: 5px;
+  padding: 10px 22px;
+  transition: all 0.2s linear;
+}
+.home__link:hover {
+  background: #1557dc;
+}
+
+.home__img {
+  position: relative;
+  width: 100%;
+}
+
+.home__img-bg {
+  max-width: 100%;
+  margin-left: -10%;
+}
+
+.h3 {
+  font-size: 2.25rem;
+  line-height: 1.27;
+  text-align: left;
+}
+
+.card__inner {
+  margin-top: 46px;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+}
+
+.card__item {
+  width: 25%;
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__photo {
+  position: relative;
+  padding-top: 60%;
+  width: 100%;
+}
+
+.card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__content {
+  padding: 17px 0 12px 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  text-align: left;
+  margin-top: 13px;
+  width: 90%;
+}
+
+.card__title__link {
+  display: inline-block;
+  color: #252a34;
+  text-decoration: none;
+  position: relative;
+}
+.card__title__link::after {
+  content: "";
+  width: 110%;
+  height: 1px;
+  background: #252a34;
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  z-index: 1;
+  transform: scale(0);
+  transition: all 0.2s linear;
+}
+.card__title__link:hover::after {
+  transform: scale(1);
+}
+
+.card__info {
+  margin-top: auto;
+}
+
+.card__price {
+  font-size: 1.875rem;
+  line-height: 1.26;
+  text-align: left;
+  color: #ff2e63;
+}
+
+.card__full-price {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: left;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.ticket {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: left;
+  color: #343434;
+}
+
+.card__price,
+.card__title,
+.ticket,
+.card__date {
+  margin-left: 13px;
+}
+
+.card__date {
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.card__link {
+  width: 30%;
+  min-height: 14.5%;
+  padding: 0 10px;
+  background: #346cd9;
+  border-radius: 10px 0 0 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  transform: translate(45%, 0);
+  transition: all 0.2s linear;
+}
+
+.card__link-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.card__link__img {
+  margin-right: 10px;
+}
+
+.card__link:hover,
+.card__link:hover .card__link-text {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.card_article {
+  margin-bottom: 100px;
+}
+
+.now {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.h3_now {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.now__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -28px;
+  margin-right: -28px;
+}
+
+.now__item {
+  width: calc(25% - 56px);
+  margin: 0 28px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.36;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.now__item:last-child .now__icon::after {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+.now__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.now__icon::after {
+  content: "";
+  width: 32px;
+  height: 20px;
+  background: url(../img/now/arrow.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 40%;
+  right: -11%;
+  z-index: 1;
+}
+
+.now__title {
+  font-weight: 700;
+  margin: 30px 0 26px 0;
+}
+
+.now__text {
+  margin-bottom: auto;
+  font-weight: 400;
+}
+
+.about {
+  background: rgba(52, 108, 217, 0.12);
+}
+
+.about__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__me {
+  padding: 78px 0 0 55px;
+}
+
+.about__text {
+  width: 100%;
+  max-width: 400px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.author {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.875;
+  text-align: center;
+}
+
+.about__photo {
+  width: 50%;
+}
+
+.about__photo__img {
+  max-width: 100%;
+}
+
+.h3_article {
+  margin-top: 100px;
+}
+
+.footer {
+  background: #1557dc;
+}
+
+.nav__link_footer {
+  color: #ffffff;
+}
