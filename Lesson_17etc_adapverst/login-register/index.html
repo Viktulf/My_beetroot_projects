@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- title -->
+    <title>Login-Register</title>     
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">  
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/header/logotype.svg" alt="Logotype" title="LOGOAUTO"></a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__item">
+                    <li class="nav__link">
+                        <a class="nav__link--link ubderline" href="../index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link ubderline" href="#">
+                            about us
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link ubderline" target="_blank" href="../shop/index.html">
+                            shop
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link ubderline" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link ubderline" href="#">
+                            contacts
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link ubderline" href="#">
+                            How it Works
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            
+            <ul class="nav__item">
+                <li class="nav__item__btn">
+                    <a href="./login-register/index.html" class="nav__btn ubderline ubderline--red">
+                            Login
+                    </a>
+                </li>
+                <li class="nav__item__btn">
+                    <a href="./login-register/index.html" class="nav__btn nav__btn--reg">
+                        Register
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container">
+        <div class="form__toggle">
+
+            <input class="toggle__input" id="login" type="radio" name="form">
+            <input class="toggle__input" id="reg" type="radio" name="form" checked>
+
+            <div class="label__wrapper">
+                <label class="form__name form__name_login" for="login">
+                    Login
+                </label>
+
+                <label class="form__name form__name_reg" for="reg">
+                    Register
+                </label>
+            </div>
+            <!-- == log in == -->
+            <form action="#" class="form login">
+                <div class="form__title">
+                    Log In
+                </div>
+
+                <label class="form__input__wrapper" for="login-email">
+                <span class="input__name">E-mail</span>
+                    <input class="form__input" id="login-email" type="email" required title="e-mail"> 
+                </label>
+                
+                <label class="form__input__wrapper" for="login-password">
+                    <span class="input__name">Password</span>
+                    <input class="form__input" id="login-password" type="password" required title="Password">
+                    <a class="link_blue" href="#" title="forgot your password">Forgot your password?</a>
+                </label>
+
+                <label class="form__input__wrapper form__input__wrapper_remember" for="login-remember">
+                    <input class="form__input form__input_remember" id="login-remember" type="checkbox" title="Remember me">
+                    <span class="input__name input__name_remember" title="Remember me">Remember me</span>
+                </label>
+
+                <button type="submit" class="submit nav__btn--reg" title="LogIn">
+                    Log in
+                </button>
+            </form>
+            <!-- == reg == -->
+            <form action="#" class="form register">
+                <div class="form__title">
+                    Create on Account
+                </div>
+                <div class="double__input__wrapper">
+                    <label class="form__input__wrapper form__input__name" for="reg-first-name">
+                        <span class="input__name">First Name</span>
+                        <input class="form__input form__input_full" id="reg-first-name" type="text" required title="First name">
+                    </label>
+                    
+                    <label class="form__input__wrapper form__input__name" for="reg-last-name">
+                        <span class="input__name">Last Name</span>
+                        <input class="form__input form__input_full" id="reg-last-name" type="text" required title="Last name">
+                    </label>
+                </div>
+                
+                <label class="form__input__wrapper"  for="reg-email">
+                <span class="input__name">E-mail</span>
+                    <input class="form__input form__input_full" id="reg-email" type="email" required>
+                </label>
+                <div class="sax__wrapper">
+                    <label for="sax-man" class="sax">
+                        <input type="radio" checked class="sax__input" id="sax-man" name="sax">
+                        Male
+                    </label>
+                    
+                    <label for="sax-wom" class="sax">
+                        <input type="radio" checked class="sax__input" id="sax-wom" name="sax">
+                        Female
+                    </label>
+                </div>
+
+                <div class="double__input__wrapper">
+                    <label class="form__input__wrapper form__input__name" for="reg-password">
+                        <span class="input__name">Password</span>
+                        <input class="form__input form__input_full" id="reg-password" type="password" required title="First name">
+                    </label>
+                    
+                    <label class="form__input__wrapper form__input__name" for="reg-confirm-password">
+                        <span class="input__name">Configm Password</span>
+                        <input class="form__input form__input_full" id="reg-confirm-password" type="password" required title="Last name">
+                    </label>
+                </div>
+                <button type="submit" class="submit nav__btn--reg">
+                    Register
+                </button>
+
+                <p class="subtext">
+                    By clicking the 'Sign Up' button, you confirm that you accept our
+                    <a href="#" class="link_blue">Tearms of Use</a> and <a href="#" class="link_blue">Privacy Policy</a>.
+                </p>
+                
+            </form>
+        </div>
+    </div>
+</main>
+    
+<footer class="footer footer-form">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+              <a href="#home"><img src="../img/footer/logotype.svg" alt="Logotype" title="LOGOAUTO"></a>
+            </div>
+
+            <nav class="nav nav_footer">
+                <ul class="nav__item">
+                    <li class="nav__link">
+                       <a class="nav__link--link nav__link_footer ubderline ubderline_white" href="#">Home</a></li>
+                    <li class="nav__link">
+                        <a class="nav__link--link nav__link_footer ubderline ubderline_white" href="#">about us</a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link nav__link_footer ubderline ubderline_white" href="#">
+                            shop
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link nav__link_footer ubderline ubderline_white" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link nav__link_footer ubderline ubderline_white" href="#">
+                            contacts
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a class="nav__link--link nav__link_footer ubderline ubderline_white" href="#">
+                            How it Works
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
